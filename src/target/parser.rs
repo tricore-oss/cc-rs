@@ -188,6 +188,7 @@ fn parse_arch(full_arch: &str) -> Option<&str> {
         arch if arch.starts_with("alpha") => "alpha", // DEC Alpha
         "hppa" => "hppa", // https://en.wikipedia.org/wiki/PA-RISC, also known as HPPA
         arch if arch.starts_with("sh") => "sh", // SuperH
+        arch if arch.starts_with("tricore") => "tricore",
         _ => return None,
     })
 }
